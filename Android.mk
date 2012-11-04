@@ -11,7 +11,6 @@ COT_RES_GEN := $(intermediates)/cot
 
 $(COT_RES_GEN):
 	mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/res/
-	cp -fr $(COT_RES_LOC)/common/res/* $(TARGET_RECOVERY_ROOT_OUT)/res/
 	cp -fr $(COT_RES_LOC)/$(DEVICE_RESOLUTION)/res/* $(TARGET_RECOVERY_ROOT_OUT)/res/
 
 LOCAL_GENERATED_SOURCES := $(COT_RES_GEN)
