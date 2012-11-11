@@ -10,8 +10,8 @@ COT_RES_LOC := $(commands_recovery_local_path)/gui/devices
 COT_RES_GEN := $(intermediates)/cot
 
 $(COT_RES_GEN):
-	mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/res/
-	cp -fr $(COT_RES_LOC)/$(DEVICE_RESOLUTION)/res/* $(TARGET_RECOVERY_ROOT_OUT)/res/
+	mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/res/theme
+	cp -fr $(COT_RES_LOC)/$(DEVICE_RESOLUTION)/res/images/* $(TARGET_RECOVERY_ROOT_OUT)/res/theme/
 
 LOCAL_GENERATED_SOURCES := $(COT_RES_GEN)
 LOCAL_SRC_FILES := cot $(COT_RES_GEN)
